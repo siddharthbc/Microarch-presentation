@@ -1,0 +1,482 @@
+[
+  {
+    "n": 1,
+    "title": "",
+    "act": "",
+    "source": "",
+    "seconds": 40,
+    "backup": false
+  },
+  {
+    "n": 2,
+    "title": "Address isolation still leaves the shared activity visible",
+    "act": "The wall has a crack",
+    "source": "Paper §§ I, IV–V · pp. 1–8",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 3,
+    "title": "Four demonstrations, one humble signal",
+    "act": "The wall has a crack",
+    "source": "Paper § VI, Tables III–IV · pp. 9–12 · reported results",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 4,
+    "title": "The route — from shared state to application leakage",
+    "act": "The wall has a crack",
+    "source": "Six acts + backup",
+    "seconds": 55,
+    "backup": false
+  },
+  {
+    "n": 5,
+    "title": "Act 2: Meet the machine",
+    "act": "Divider",
+    "source": "",
+    "seconds": 15,
+    "backup": false
+  },
+  {
+    "n": 6,
+    "title": "Memory offload creates a new place to observe",
+    "act": "Meet the machine",
+    "source": "Paper §§ I–II-A · pp. 1–2",
+    "seconds": 65,
+    "backup": false
+  },
+  {
+    "n": 7,
+    "title": "A DSA operation is a descriptor-driven pipeline",
+    "act": "Meet the machine",
+    "source": "Paper § II-A, Fig. 1 · pp. 2–3",
+    "seconds": 75,
+    "backup": false
+  },
+  {
+    "n": 8,
+    "title": "The device keeps its own translation cache",
+    "act": "Meet the machine",
+    "source": "Paper § II-B, Fig. 1 · pp. 2–3",
+    "seconds": 75,
+    "backup": false
+  },
+  {
+    "n": 9,
+    "title": "The attacker needs DSA access and co-location",
+    "act": "Meet the machine",
+    "source": "Paper § V-A · pp. 7–8",
+    "seconds": 75,
+    "backup": false
+  },
+  {
+    "n": 10,
+    "title": "Two channels cross two different boundaries",
+    "act": "Meet the machine",
+    "source": "Paper §§ IV-A, V · pp. 3–8",
+    "seconds": 80,
+    "backup": false
+  },
+  {
+    "n": 11,
+    "title": "Reverse engineering answers three questions",
+    "act": "Meet the machine",
+    "source": "Paper §§ III–IV · pp. 3–7",
+    "seconds": 60,
+    "backup": false
+  },
+  {
+    "n": 12,
+    "title": "Characterization counters ≠ attack signals",
+    "act": "Meet the machine",
+    "source": "Paper § IV-B, Table I · pp. 4–6",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 13,
+    "title": "Act 3: The detective story",
+    "act": "Divider",
+    "source": "",
+    "seconds": 15,
+    "backup": false
+  },
+  {
+    "n": 14,
+    "title": "Clue #1 — the opcode chooses which slot you touch",
+    "act": "The detective story",
+    "source": "Paper § IV-B, Fig. 3 · pp. 4–5",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 15,
+    "title": "The reveal — five drawers, one translation each",
+    "act": "The detective story",
+    "source": "Paper §§ IV-A–B, Fig. 2 · pp. 3–6 · empirical model",
+    "seconds": 75,
+    "backup": false
+  },
+  {
+    "n": 16,
+    "title": "Proof of “one slot” — base → offset → base",
+    "act": "The detective story",
+    "source": "Paper § IV-B, Listing 2 · pp. 4–5",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 17,
+    "title": "The drawers are independent — even sharing bits",
+    "act": "The detective story",
+    "source": "Paper § IV-B, Listings 3–4 · p. 5",
+    "seconds": 75,
+    "backup": false
+  },
+  {
+    "n": 18,
+    "title": "A slot remembers the last page, not the history",
+    "act": "The detective story",
+    "source": "Paper § IV-B · pp. 5–6",
+    "seconds": 60,
+    "backup": false
+  },
+  {
+    "n": 19,
+    "title": "The money shot — eviction follows the engine, not the queue",
+    "act": "The detective story",
+    "source": "Paper § IV-B, Fig. 5 · p. 6",
+    "seconds": 85,
+    "backup": false
+  },
+  {
+    "n": 20,
+    "title": "The clock still works — even under noise",
+    "act": "The detective story",
+    "source": "Paper § IV-B, Fig. 4 · pp. 5–6 · original distributions",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 21,
+    "title": "Weapon #1 — Prime → Idle → Probe",
+    "act": "The detective story",
+    "source": "Paper § V-B · p. 8",
+    "seconds": 75,
+    "backup": false
+  },
+  {
+    "n": 22,
+    "title": "Why it’s powerful — and what it cannot do",
+    "act": "The detective story",
+    "source": "Paper §§ IV-B, V-B · pp. 4–8 · interpretation",
+    "seconds": 60,
+    "backup": false
+  },
+  {
+    "n": 23,
+    "title": "The dead end that wasn’t — a flag talks",
+    "act": "The detective story",
+    "source": "Paper § IV-C, Fig. 6 · pp. 6–7 · original latency plot",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 24,
+    "title": "Learning to hold the queue hostage",
+    "act": "The detective story",
+    "source": "Paper §§ IV-A, IV-C · pp. 3–4, 6–7",
+    "seconds": 65,
+    "backup": false
+  },
+  {
+    "n": 25,
+    "title": "The trap — leave exactly one seat open",
+    "act": "The detective story",
+    "source": "Paper §§ IV-C, V-C, Listing 6 · pp. 7–8",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 26,
+    "title": "Weapon #2 — Congest → Idle → Probe",
+    "act": "The detective story",
+    "source": "Paper § V-C · p. 8",
+    "seconds": 75,
+    "backup": false
+  },
+  {
+    "n": 27,
+    "title": "Two weapons, two personalities",
+    "act": "The detective story",
+    "source": "Paper §§ V–VI · pp. 7–12 · footprint row = presenter reading",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 28,
+    "title": "Act 4: What it steals",
+    "act": "Divider",
+    "source": "",
+    "seconds": 15,
+    "backup": false
+  },
+  {
+    "n": 29,
+    "title": "Can it even carry a message?",
+    "act": "What it steals",
+    "source": "Paper § VI-A · p. 9 · simplified protocol",
+    "seconds": 65,
+    "backup": false
+  },
+  {
+    "n": 30,
+    "title": "17.19 kbps — and a bandwidth / error tradeoff",
+    "act": "What it steals",
+    "source": "Paper § VI-A, Fig. 9, Table IV · pp. 9, 12",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 31,
+    "title": "Attack #1 — websites leak through the stack",
+    "act": "What it steals",
+    "source": "Paper § VI-B, Fig. 8 · pp. 8–10 · simplified path",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 32,
+    "title": "The pipeline, laid bare — and it is closed-world",
+    "act": "What it steals",
+    "source": "Paper § VI-B · pp. 9–10 · dataset arithmetic from stated split",
+    "seconds": 65,
+    "backup": false
+  },
+  {
+    "n": 33,
+    "title": "The traces really are different",
+    "act": "What it steals",
+    "source": "Paper § VI-B, Fig. 10 · p. 9 · original example traces",
+    "seconds": 55,
+    "backup": false
+  },
+  {
+    "n": 34,
+    "title": "85.73% — the number you must not misquote",
+    "act": "What it steals",
+    "source": "Paper § VI-B, Fig. 11 · pp. 9–10 · original 15-site matrix",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 35,
+    "title": "Attack #2 — keystrokes, via transparent offload",
+    "act": "What it steals",
+    "source": "Paper § VI-C · p. 10 · no end-to-end text recovery",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 36,
+    "title": "You can see the typing",
+    "act": "What it steals",
+    "source": "Paper § VI-C, Fig. 12 · p. 10 · original filtered traces",
+    "seconds": 60,
+    "backup": false
+  },
+  {
+    "n": 37,
+    "title": "SWQ wins timing — and a caveat I owe you",
+    "act": "What it steals",
+    "source": "Paper § VI-C, Tables III–IV · pp. 10–12 · headline metrics as reported",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 38,
+    "title": "Attack #3 — fingerprinting the LLM next door",
+    "act": "What it steals",
+    "source": "Paper § VI-D, Table II · pp. 10–11",
+    "seconds": 65,
+    "backup": false
+  },
+  {
+    "n": 39,
+    "title": "98.6% — impressive, and bounded",
+    "act": "What it steals",
+    "source": "Paper § VI-D, Fig. 13 · p. 11 · original model traces",
+    "seconds": 65,
+    "backup": false
+  },
+  {
+    "n": 40,
+    "title": "Act 5: Does it hold up?",
+    "act": "Divider",
+    "source": "",
+    "seconds": 15,
+    "backup": false
+  },
+  {
+    "n": 41,
+    "title": "It barely flinches under stress",
+    "act": "Does it hold up?",
+    "source": "Paper § VI-E, Table III · p. 11 · all six reported rows",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 42,
+    "title": "Better on two axes — honestly, not all",
+    "act": "Does it hold up?",
+    "source": "Paper § VI-F, Table IV · pp. 11–12 · cross-paper values, not matched re-runs",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 43,
+    "title": "The clean hardware fix costs the thing DSA is for",
+    "act": "Does it hold up?",
+    "source": "Paper § VII · pp. 11–12 · proposals, not shipped fixes",
+    "seconds": 65,
+    "backup": false
+  },
+  {
+    "n": 44,
+    "title": "What an operator can do right now",
+    "act": "Does it hold up?",
+    "source": "Paper § VII · p. 12 · deployment guidance",
+    "seconds": 65,
+    "backup": false
+  },
+  {
+    "n": 45,
+    "title": "They measured the cost — not the leftover leak",
+    "act": "Does it hold up?",
+    "source": "Paper § VII, Fig. 14 · p. 12 · original throughput chart",
+    "seconds": 65,
+    "backup": false
+  },
+  {
+    "n": 46,
+    "title": "Act 6: My verdict",
+    "act": "Divider",
+    "source": "",
+    "seconds": 15,
+    "backup": false
+  },
+  {
+    "n": 47,
+    "title": "What’s genuinely excellent",
+    "act": "My verdict",
+    "source": "Presenter assessment · paper §§ IV–VI",
+    "seconds": 65,
+    "backup": false
+  },
+  {
+    "n": 48,
+    "title": "What I’d push back on",
+    "act": "My verdict",
+    "source": "Presenter assessment · paper §§ V–VII, esp. § VI-C",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 49,
+    "title": "The experiments I’d want to see",
+    "act": "My verdict",
+    "source": "Presenter-proposed · not reported in the paper",
+    "seconds": 65,
+    "backup": false
+  },
+  {
+    "n": 50,
+    "title": "Shared accelerator state belongs in the isolation model",
+    "act": "My verdict",
+    "source": "Based on Chen et al., HPCA 2026 · main talk ends here",
+    "seconds": 70,
+    "backup": false
+  },
+  {
+    "n": 51,
+    "title": "Glossary",
+    "act": "Glossary",
+    "source": "Paper §§ II–V · pp. 2–8",
+    "seconds": 45,
+    "backup": true
+  },
+  {
+    "n": 52,
+    "title": "Descriptor layout — field meaning depends on opcode",
+    "act": "Descriptor detail",
+    "source": "Paper Fig. 3 · p. 4",
+    "seconds": 45,
+    "backup": true
+  },
+  {
+    "n": 53,
+    "title": "Observation windows have different constraints",
+    "act": "Timing & calibration",
+    "source": "Paper §§ IV-B–C, V-B–C · pp. 5–8",
+    "seconds": 45,
+    "backup": true
+  },
+  {
+    "n": 54,
+    "title": "Keystroke count arithmetic needs clarification",
+    "act": "Reporting audit",
+    "source": "Paper § VI-C · p. 10 · diagnostic only",
+    "seconds": 45,
+    "backup": true
+  },
+  {
+    "n": 55,
+    "title": "Sampling and dataset sizes",
+    "act": "Evaluation detail",
+    "source": "Paper §§ VI-B, VI-D · pp. 9–11",
+    "seconds": 45,
+    "backup": true
+  },
+  {
+    "n": 56,
+    "title": "Different metrics answer different questions",
+    "act": "Metric interpretation",
+    "source": "Paper §§ VI-A–F · pp. 9–12",
+    "seconds": 45,
+    "backup": true
+  },
+  {
+    "n": 57,
+    "title": "The original cross-paper comparison table",
+    "act": "Prior-work detail",
+    "source": "Paper Table IV · p. 12 · blank cells = not reported",
+    "seconds": 45,
+    "backup": true
+  },
+  {
+    "n": 58,
+    "title": "Reproduction requires a configured DSA platform",
+    "act": "Artifact & reproducibility",
+    "source": "Paper Appendix, p. 15 · authors’ artifact",
+    "seconds": 45,
+    "backup": true
+  },
+  {
+    "n": 59,
+    "title": "Likely questions and concise answers",
+    "act": "Q&A preparation",
+    "source": "Answers from paper §§ IV–VII + presenter assessment",
+    "seconds": 45,
+    "backup": true
+  },
+  {
+    "n": 60,
+    "title": "Sources and provenance",
+    "act": "References",
+    "source": "Primary source: user-supplied hpca26dsassassin.pdf",
+    "seconds": 45,
+    "backup": true
+  }
+]
