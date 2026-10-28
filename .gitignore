@@ -4,3 +4,9 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+# Local review outputs and backups; final PPTX/PDF and manifests stay tracked.
+deck_v2/backups/
+deck_v2/output/*_review/
+deck_v2/output/rebuild_check/
+deck_v2/output/rendered/

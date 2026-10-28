@@ -1,0 +1,57 @@
+[
+  {
+    "slide": 4,
+    "asset": "Figure 1",
+    "source": "Paper Fig. 1, §II-A/B · p. 3 · original diagram; caption omitted"
+  },
+  {
+    "slide": 7,
+    "asset": "Figure 7",
+    "source": "Paper Fig. 7, §§V–VI · p. 8 · original attack setup"
+  },
+  {
+    "slide": 9,
+    "asset": "Figure 3",
+    "source": "Paper Fig. 3, §IV-B · pp. 4–5 · original descriptor diagram"
+  },
+  {
+    "slide": 10,
+    "asset": "Figure 2",
+    "source": "Paper Fig. 2, §IV-A/B · p. 4 · original reverse-engineered structure"
+  },
+  {
+    "slide": 11,
+    "asset": "Listing 2",
+    "source": "Paper Listing 2, §IV-B · p. 5 · verbatim code; helper setup omitted"
+  },
+  {
+    "slide": 12,
+    "asset": "Listings 3 and 4",
+    "source": "Paper Listings 3–4, §IV-B · p. 5 · verbatim code; setup omitted"
+  },
+  {
+    "slide": 13,
+    "asset": "Figure 5",
+    "source": "Paper Fig. 5, §IV-B · p. 6 · original E0/E1/E2 diagram"
+  },
+  {
+    "slide": 15,
+    "asset": "Listing 1, lines 7–12",
+    "source": "Paper Listing 1, lines 7–12 · p. 4; NOOP attack in §V-B · p. 8"
+  },
+  {
+    "slide": 17,
+    "asset": "Listing 5",
+    "source": "Paper Listing 5, §IV-C · p. 6 · verbatim experiment; setup omitted"
+  },
+  {
+    "slide": 18,
+    "asset": "Listing 6",
+    "source": "Paper Listing 6, §§IV-C/V-C · pp. 7–8 · verbatim code; setup omitted"
+  },
+  {
+    "slide": 22,
+    "asset": "Figure 8",
+    "source": "Paper Fig. 8, §VI-B · pp. 8–10 · original VPP/memif setup"
+  }
+]

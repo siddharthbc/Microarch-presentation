@@ -1,0 +1,78 @@
+{
+  "slide_count": 43,
+  "main_slides": 36,
+  "backup_slides": 7,
+  "pdf_page_count": 43,
+  "speaker_notes_count": 43,
+  "figures": [
+    {
+      "slide": 4,
+      "figure": 1,
+      "hash_matches_source_asset": true
+    },
+    {
+      "slide": 7,
+      "figure": 7,
+      "hash_matches_source_asset": true
+    },
+    {
+      "slide": 9,
+      "figure": 3,
+      "hash_matches_source_asset": true
+    },
+    {
+      "slide": 10,
+      "figure": 2,
+      "hash_matches_source_asset": true
+    },
+    {
+      "slide": 13,
+      "figure": 5,
+      "hash_matches_source_asset": true
+    },
+    {
+      "slide": 22,
+      "figure": 8,
+      "hash_matches_source_asset": true
+    }
+  ],
+  "editable_code": [
+    {
+      "slide": 11,
+      "listing": 2,
+      "text_matches_source": true
+    },
+    {
+      "slide": 12,
+      "listing": 3,
+      "text_matches_source": true
+    },
+    {
+      "slide": 12,
+      "listing": 4,
+      "text_matches_source": true
+    },
+    {
+      "slide": 15,
+      "listing": 1,
+      "text_matches_source": true
+    },
+    {
+      "slide": 17,
+      "listing": 5,
+      "text_matches_source": true
+    },
+    {
+      "slide": 18,
+      "listing": 6,
+      "text_matches_source": true
+    }
+  ],
+  "visual_review": "Title and revised experiment slide inspected after PowerPoint export. All 43 pages have only page numbers in the bottom footer; 11 detective-story headers removed. All speaker notes, image bytes and editable code texts preserved. Rebuilt text and notes match the edited deck.",
+  "pptx_sha256": "27645d0272113b75733279148c5ecebfef329794ddb5303b4d67bac34cb1124f",
+  "presenters": "Siddharth Banakar and Dinesh Samala",
+  "page_number_only_footers": 43,
+  "detective_story_headers": 0,
+  "notes_images_and_code_preserved": true,
+  "presentation_date": "29 October 2026"
+}

@@ -1,0 +1,181 @@
+{
+  "source_pdf": "hpca26dsassassin.pdf",
+  "source_sha256": "508e0e103098de69806c534cbcc05b73a39f8ffe950016a10dfd17549f975f3a",
+  "paper_title": "DSASSASSIN: Cross-VM Side-Channel Attacks by Exploiting Intel Data Streaming Accelerator",
+  "conference": "HPCA 2026",
+  "pdf_page_numbering": "1-based",
+  "coordinate_system": "PDF points from upper-left; 72 points per inch",
+  "render_scale": 5,
+  "render_dpi": 360,
+  "modifications": "Only rectangular cropping and rasterization; original figure contents, colors, and labels retained. Captions supplied separately.",
+  "figures": [
+    {
+      "number": 1,
+      "page": 3,
+      "title": "Overview of DSA and ATS architecture",
+      "caption": "Fig. 1. Overview of DSA and ATS architecture. ⋆Note that DSA accesses memory by sending a memory request to the root complex on the PCIe bus. The leftmost block is partially based on the die shot of Sapphire Rapids [48].",
+      "diagram": {
+        "file": "paper_fig1.png",
+        "crop_points": [
+          70,
+          48,
+          538,
+          199
+        ],
+        "width_px": 2340,
+        "height_px": 755
+      },
+      "with_caption": {
+        "file": "paper_fig1_captioned.png",
+        "crop_points": [
+          49,
+          48,
+          563,
+          228
+        ],
+        "width_px": 2570,
+        "height_px": 900
+      }
+    },
+    {
+      "number": 2,
+      "page": 4,
+      "title": "Revealed detail of DSA implementation",
+      "caption": "Fig. 2. Revealed detail of DSA implementation.",
+      "diagram": {
+        "file": "paper_fig2.png",
+        "crop_points": [
+          71,
+          47,
+          277,
+          156
+        ],
+        "width_px": 1030,
+        "height_px": 545
+      },
+      "with_caption": {
+        "file": "paper_fig2_captioned.png",
+        "crop_points": [
+          71,
+          47,
+          277,
+          174
+        ],
+        "width_px": 1030,
+        "height_px": 635
+      }
+    },
+    {
+      "number": 3,
+      "page": 4,
+      "title": "DSA Descriptor format",
+      "caption": "Fig. 3. DSA Descriptor format. Note that the descriptor is tagged with PASID to prevent other processes from executing it directly.",
+      "diagram": {
+        "file": "paper_fig3.png",
+        "crop_points": [
+          320,
+          136,
+          550,
+          241
+        ],
+        "width_px": 1150,
+        "height_px": 525
+      },
+      "with_caption": {
+        "file": "paper_fig3_captioned.png",
+        "crop_points": [
+          312,
+          136,
+          563,
+          271
+        ],
+        "width_px": 1255,
+        "height_px": 675
+      }
+    },
+    {
+      "number": 5,
+      "page": 6,
+      "title": "Three experiments distinguishing DevTLB indexing and cross-VM feasibility",
+      "caption": "Fig. 5. Three experiments to distinguish the indexing policy of DevTLB and to identify the feasibility of a cross-VM attacker.",
+      "diagram": {
+        "file": "paper_fig5.png",
+        "crop_points": [
+          345,
+          47,
+          527,
+          181
+        ],
+        "width_px": 910,
+        "height_px": 670
+      },
+      "with_caption": {
+        "file": "paper_fig5_captioned.png",
+        "crop_points": [
+          312,
+          47,
+          563,
+          211
+        ],
+        "width_px": 1255,
+        "height_px": 820
+      }
+    },
+    {
+      "number": 7,
+      "page": 8,
+      "title": "Setup of cross-VM attacks on DSA",
+      "caption": "Fig. 7. Setup of cross-VM attacks on DSA. The red line represents DSA_DevTLB attack flow, and the teal line shows DSA_SWQ attack flow.",
+      "diagram": {
+        "file": "paper_fig7.png",
+        "crop_points": [
+          333,
+          48,
+          538,
+          140
+        ],
+        "width_px": 1025,
+        "height_px": 460
+      },
+      "with_caption": {
+        "file": "paper_fig7_captioned.png",
+        "crop_points": [
+          312,
+          48,
+          563,
+          170
+        ],
+        "width_px": 1255,
+        "height_px": 610
+      }
+    },
+    {
+      "number": 8,
+      "page": 8,
+      "title": "VPP memif architecture with attack scenario",
+      "caption": "Fig. 8. VPP memif architecture with attack scenario.",
+      "diagram": {
+        "file": "paper_fig8.png",
+        "crop_points": [
+          335,
+          179,
+          538,
+          251
+        ],
+        "width_px": 1015,
+        "height_px": 360
+      },
+      "with_caption": {
+        "file": "paper_fig8_captioned.png",
+        "crop_points": [
+          335,
+          179,
+          538,
+          271
+        ],
+        "width_px": 1015,
+        "height_px": 460
+      }
+    }
+  ]
+}

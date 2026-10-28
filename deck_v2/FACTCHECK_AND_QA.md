@@ -1,5 +1,9 @@
 # DSASSASSIN deck — fact-check report & audience Q&A bank
 
+**Current structure:** 43 slides — **36 main slides + 7 backup slides**. The former multi-slide “My verdict” section is condensed into the neutral **“Findings and limits”** closing slide (slide 36). Slide references below use the shortened deck unless explicitly marked historical. The shortened PowerPoint and PDF exports passed the checks recorded below before the latest header/footer cleanup; the earlier 60-slide export record is retained for provenance.
+
+**Presenters and source display:** Siddharth Banakar and Dinesh Samala present the paper; the original paper author credits remain unchanged. Visible bottom footers now contain only page numbers, and the “The detective story” header is removed from slides 9–19. Source citations remain in speaker notes, the slide plan's source map, and the asset manifests. The updated PowerPoint was rendered to 43 PDF pages and slide images. The title and a revised experiment slide were visually inspected; all slide footers and removed headers were checked. Speaker notes, diagram images, and editable code text match the preceding revision.
+
 This document does two things you asked for:
 1. **Verification** — every quantitative claim and key technical statement in the deck cross-checked against the paper (`paper_reading.txt`, the full extracted text of the HPCA 2026 paper), with discrepancies fixed and important omissions noted.
 2. **Student / audience question bank** — likely questions grouped by theme, each with a tight answer grounded in the paper.
@@ -32,7 +36,7 @@ This document does two things you asked for:
 
 ### B. Discrepancies found and FIXED in this pass
 
-1. **Comparison table was incomplete and slightly favourable (slide 42 / "Does it hold up?").**
+1. **Comparison table was incomplete and slightly favourable (slide 32 / "Does it hold up?").**
    The earlier version showed only capacity / bit error / keystroke σ, which made DSASSASSIN look like it won everywhere. Table IV actually also reports **keystroke F1** and **website accuracy/F1** for the baselines, where the paper does **not** win every column:
    - **IPI keystroke F1 = 97.9%** *beats* DevTLB's 92.0% (only SWQ's 98.4% wins that column).
    - **DEVIOUS bit error = 2.18%** is *lower* (better) than DevTLB's 4.63%.
@@ -40,39 +44,40 @@ This document does two things you asked for:
    - IPI website is reported as **F1 80.4%**, not a top-1 accuracy.
    → The slide now shows all these columns and a footnote, and the key line was changed from "≈4.98× capacity / ≈4.08× lower error" to the more defensible "**best on capacity (DevTLB) and keystroke timing (SWQ) — not on every axis**." (The ~5×/~4× multipliers are the paper's own abstract claim *against IPI specifically*, so they remain true as stated, just no longer the headline.)
 
-2. **SWQ congestion threshold was missing (slide 25, "the trap").**
+2. **SWQ congestion threshold was missing (slide 18, "the trap").**
    The paper states contention via EFLAGS.ZF **only appeared when the transfer size reached ≥ 2²⁵ bytes (32 MiB)** (§IV-C). The deck now states the anchor copy must be large, with that number — important because it explains *why* a long memcpy is needed and bounds how "stealthy" the attack can be.
 
-3. **Batch-fetcher wording tightened (slide 18).**
-   Paper: the batch fetcher's *descriptor reads* and the *completion-record write* bypass DevTLB indexing. The deck now says "the batch fetcher's **own descriptor reads and completion-record writes**," matching §IV-B precisely (avoids implying that work executed *inside* a batch is invisible).
+3. **Batch-fetcher wording tightened (now in slide 10 notes).**
+   Paper: the batch fetcher's *descriptor reads* and the *completion-record write* bypass DevTLB indexing. Preserve the qualification "the batch fetcher's **own descriptor reads and completion-record writes**,"
+   matching §IV-B precisely; this does not imply that work executed *inside* a batch is invisible. The separate recency slide was removed, and this detail is carried into the reconstructed-microarchitecture explanation.
 
-4. **Threat-model nuance added (slide 9).**
+4. **Threat-model nuance added (slide 6).**
    §V-A contains an apparent tension: it says configuring engine-affinity/WQ settings requires root, then says setting affinity to a specific engine/queue does *not* require root. The deck speaker notes now flag this explicitly and give the sensible reading (creating/configuring queues via `accel-config` is privileged; binding to an existing portal is not). Kernel version 6.11.0-25 and the IDXD driver are now named.
 
 5. **4.63% vs 4.64% inconsistency documented (backup "Reporting audit").**
    The paper's **abstract and contributions say 4.64%**; **§VI-A and Table IV say 4.63%.** The deck already used 4.63% (the results-section value); the backup audit slide now notes the discrepancy so you're not caught off guard.
 
-6. **Co-location critique made precise (slide 48).**
-   Paper §VI-C *does* describe an SWQ-discovery method for keystrokes (open a temporary SSH connection and probe candidate SWQs). The critique now credits that and narrows the valid complaint to: **engine binding is assumed, and large-scale co-location is not demonstrated** — rather than implying no discovery method exists at all.
+6. **Co-location limits made precise (slides 6 and 36).**
+   Paper §VI-C *does* describe an SWQ-discovery method for keystrokes (open a temporary SSH connection and probe candidate SWQs). The retained qualification is: **engine binding is assumed, and large-scale co-location is not demonstrated**. The shortened deck has no separate presenter-critique section.
 
-### C. Important facts VERIFIED present (not missed)
+### C. Key source facts and where they belong in the shortened deck
 
-- **Responsible disclosure to Intel PSIRT** — stated (acknowledged). ✅ in notes.
-- **Negative control E2** (separate engines → no leak) — central, on the money-shot slide. ✅
-- **Huge-page eviction** (a 2 MiB conflicting address evicts a 4 KiB entry; no per-page-size entries) — in slide 16 notes. ✅
-- **Cross-page: only the final page's translation is cached** — slide 18. ✅
-- **src2/dst share descriptor bytes (offset 24) but map to separate slots** — slide 17 + backup descriptor slide. ✅
-- **VPP/memif on DPDK; DTO via runtime linker** as the two offload vectors — slides 31, 35, 38. ✅
-- **Closed-world / fixed-prompt caveats; "timing not text"** — slides 32, 34, 35, 39, 48. ✅
-- **Confidence intervals computed from 50 repetitions, geometric-mean baseline** — §VI-E; summarised on the robustness slide. ✅
-- **Mitigation measures overhead but not residual leakage** — slide 45. ✅
+- **Responsible disclosure to Intel PSIRT** — acknowledged in the paper; retain as source context rather than a separate strengths slide.
+- **Negative control E2** — separate engines prevented the measured cross-VM eviction in the tested setup; slide 13.
+- **Huge-page eviction** — a 2 MiB conflicting address evicts a 4 KiB entry; no per-page-size entries (§IV-B). Supporting context for slide 11's one-slot experiment.
+- **Cross-page: only the final page's translation is cached** — folded into slide 10 notes.
+- **src2/dst share descriptor bytes (offset 24) but map to separate slots** — slides 9 and 12. The duplicate descriptor appendix was removed.
+- **VPP/memif on DPDK; DTO via runtime linker** as the two offload vectors — slides 22, 26, 29.
+- **Closed-world / fixed-prompt caveats; "timing not text"** — slides 23, 25, 26, 30, 36.
+- **Confidence intervals computed from 50 repetitions, geometric-mean baseline** — §VI-E; robustness discussion on slide 31.
+- **Mitigation measures overhead but not residual leakage** — slide 35.
 
 ### D. Minor things deliberately NOT changed (judgment calls)
 
-- The **"footprint: light vs heavy / loud"** row on the weapons-comparison slide and the **detectability** critique are labelled *presenter interpretation* — they are reasonable inferences, not paper claims, and are flagged as such.
+- The removed weapons-comparison slide's **active SWQ congestion** point is retained with the primitive explanation (slide 19 notes). Victim impact and detectability remain unmeasured questions, not established paper results.
 - The **~5× faster / ~4× more accurate** phrasing is retained only where attributed to the paper's own abstract (against IPI). It is not used as a general "beats everything" claim.
 
-**Bottom line:** the core technical story (what DevTLB/SWQ are, how they were reverse-engineered, the two primitives, the four attacks, the engine-vs-queue result) matches the paper exactly. The only substantive correction was the **comparison table**, which previously under-reported the columns where baselines win; that is now shown honestly.
+The shortened deck retains the core technical story: DevTLB/SWQ structure, reverse-engineering experiments, both primitives, four demonstrations, and the engine-versus-queue sharing result. The source qualifications below remain in force, including the limitations on attribution from individual probes and the paper's metric inconsistencies.
 
 ---
 
@@ -134,7 +139,7 @@ No. They recover keystroke *timing* (event detection + timestamps). They note ti
 Classifying which of **8 known model configurations** is running, under **identical prompts** and fixed runtimes (llama.c CPU / ollama CPU-GPU). It does not recover weights, prompts, or outputs (§VI-D).
 
 **Q: How robust are these to noise?**
-Across quiet/noisy and local/cloud the metrics move by <1 point with tight 95% CIs (§VI-E). But "noise" = synthetic PCIe (2 GB/s NVMe) + memory (10 GB/s) pressure — not many real competing tenants on the same engine.
+Most reported metrics remain close across quiet/noisy and local/cloud runs (§VI-E); DevTLB keystroke F1 varies more, from 90.5% to 93.4%. Here "noise" means synthetic PCIe (2 GB/s NVMe) and memory (10 GB/s) pressure, not many real competing tenants on the same engine.
 
 **Q: The keystroke F1 numbers — do the detection counts actually add up?**
 Not perfectly. From the reported detections/FP/FN you can back out slightly different F1 values (≈97.4% / 98.5%) than the printed 92.0% / 98.4%. It doesn't change which primitive is better, but it's a reporting inconsistency worth knowing (backup "Reporting audit" slide).
@@ -178,6 +183,66 @@ Artifact is public (MIT, github.com/hkustgz-secarch/dsassassin; Zenodo DOI 10.52
 ### 8 — Harder / research-level questions (for a sophisticated audience)
 
 - **Why is the DevTLB only single-entry per field — is that a bug or a deliberate area tradeoff?** The paper doesn't say; it's an observed implementation choice. A larger, PASID-partitioned DevTLB would close the channel at an area/throughput cost — exactly the proposed hardware fix.
-- **Would the classifiers survive cross-day / cross-host splits?** Untested — a stated open question and one of the presenter's proposed follow-ups.
+- **Would the classifiers survive cross-day / cross-host splits?** Untested — generality beyond the evaluated datasets remains open.
 - **How does this compare conceptually to IOTLB attacks (DEVIOUS)?** Same family (device-side translation leakage) but the DevTLB is a *different, undocumented* structure that VT-d's PASID isolation was assumed to cover — and doesn't.
 - **Is the covert "true capacity" error-corrected throughput or raw?** True/effective capacity after accounting for bit errors — which is why the capacity-vs-raw-rate curve peaks and then falls (Fig. 9).
+
+---
+
+## Paper diagrams and editable code audit — 28 October 2026
+
+This revision adds the paper's original architecture/experiment drawings and code to existing main slides. The source is the user-supplied `hpca26dsassassin.pdf`; the source PDF hash, crop rectangles, figure captions, listing text, and extraction notes are recorded under `paper_assets/`. The following qualifications supersede any broader shorthand in the earlier audit and narration.
+
+| Slide | Material reproduced | PDF page | Source check |
+|---|---|---:|---|
+| 4 | Fig. 1 | 3 | Original architecture diagram, including decode/read/compute/write/notify stages. |
+| 7 | Fig. 7 | 8 | Original DevTLB and SWQ cross-VM setups; sharing assumptions explained separately. |
+| 9 | Fig. 3 | 4 | Original descriptor layout; offset 24 changes meaning by opcode. |
+| 10 | Fig. 2 | 4 | Original reconstructed microarchitecture, not a new measured design. |
+| 11 | Listing 2 | 5 | Three calls and their comments preserved as editable text. |
+| 12 | Listings 3–4 | 5 | Original field-isolation experiments preserved as editable text. |
+| 13 | Fig. 5 | 6 | Original E0/E1/E2 placements, with outcomes from §IV-B. |
+| 15 | Listing 1, lines 7–12 | 4 | Timing excerpt only; no descriptor opcode initialization reproduced. |
+| 17 | Listing 5 | 6 | Original batch/work scheduling experiment preserved as editable text. |
+| 18 | Listing 6 | 7 | Original congestion and submission-probe helpers preserved as editable text. |
+| 22 | Fig. 8 | 8 | Original VPP/memif packet path; inference explanation is presenter text. |
+
+The shortened main talk contains **36 slides**, followed by **7 backup slides**. All six reused paper figures and all six editable code excerpts remain. Diagram images preserve the source drawing; explanatory text is separate from the original artwork. Figure/listing and page references remain in speaker notes and the source map rather than the visible footer. Code is editable monospace text with formatting adjusted for presentation. `paper_assets/figure_manifest.json` and `paper_assets/code_listings.json` provide the exact source map; `extract_paper_assets.py` reproduces the crops and listing extraction.
+
+### Accuracy qualifications for the new material
+
+1. **Listing 1 opcode inconsistency is visible in the source, not silently repaired.** The printed `probe_memcmp` helper assigns `DSA_OPCODE_COMPVAL` and also fills `src2_addr`. The slide uses only lines 7–12, which demonstrate enqueue and completion timing, and does not present the initialization as a verified two-source compare recipe. The §V-B attack uses a `noop`; the displayed timing excerpt is not claimed to be its complete implementation.
+
+2. **The timing excerpt starts its timestamp after submission.** Listing 1's `start = rdtsc()` follows `enqcmd`; the returned difference covers the interval shown around completion polling. It is not the total duration from before submission. Listing 5 contains its own fence/timing sequence for a different experiment. The diagrams and lecture sequence are conceptual; no instruction-by-instruction, cycle-accurate hardware schedule is established by these excerpts.
+
+3. **Paper snippets omit implementation setup.** Descriptor flags, completion-record association/initialization, alignment, memory mappings, device configuration/access, error/retry handling, and full timing/ordering context are not supplied by these short listings. Label them as paper excerpts rather than standalone runnable code. Listing 6's `enqcmd` probe reports submission status; an accepted submission is not a completed DSA job.
+
+4. **A DevTLB miss does not always cause a page-table walk.** It requires the Translation Agent path; an IOTLB hit can provide the translation without a walk. The paper's §IV-B latency experiments warm both the IOTLB and page tables. PASID/address-space authorization and shared replacement capacity are distinct: the attack measures its own translation behavior, not the victim's physical addresses or page contents.
+
+5. **Engine isolation is the measured control, not a universal sufficiency theorem.** Fig. 5 reports eviction for E0/E1 and retention for E2 in the tested configuration. State that separate engines prevented this cross-VM DevTLB eviction in those experiments. Likewise, a slow probe or a full queue alone does not uniquely identify a victim: the inference depends on preparation, calibration, competing activity, and the observation window.
+
+6. **Congestion occupancy is a controlled model.** Listing 6 submits one large copy and `wq_size - 2` fillers, aiming to leave a single admission opportunity during the probe window. Actual state changes as work drains; the paper requires the window to stay shorter than the anchor copy's execution time. The ≥ 2²⁵-byte threshold is reported for the characterized platform, not asserted as a universal hardware constant.
+
+7. **Field labels and application labels have different origins.** The descriptor and DevTLB diagrams label hardware roles such as src, dst, and comp. Browser, website, keystroke, and model labels come from the controlled workload or later inference; none is stored as such in the DevTLB. The keystroke evaluation reports timing/event detection, not recovered typed text. Classifier accuracy and other headline values remain the paper's reported results, with the existing closed-world, fixed-prompt, and reporting caveats retained.
+
+8. **Fig. 1 is authoritative for its drawn stage order.** Read the labels as decode → read → compute → write → notify. The prose's stage-number description does not align cleanly with those labels; avoid repeating the earlier plan's incorrect “2, 3, 5 = read / compute / write” gloss.
+
+### Historical export QA — 60-slide version before trimming
+
+The earlier PPTX and its PowerPoint-rendered PDF/PNG export were checked on 28 October 2026, before the current shortening request. That version contained **60 slides with speaker notes**, **60 PDF pages**, and **60 slide images**. All six newly embedded original figures matched the extracted PNG assets byte-for-byte. All six editable listing text boxes, including Listing 1's lines 7–12 excerpt, matched `code_listings.json` exactly.
+
+The eleven revised main slides were visually reviewed, with the then-numbered slides **16, 19, 21, 25, and 26** rechecked after layout corrections. Code fit inside its panels, and result tables, explanatory text, and source footers did not overlap in those renders. This historical check establishes the prior version's presentation fidelity; it does not substitute for rendering the current 43-slide revision, claim that the snippets are runnable programs, or reproduce the hardware experiments.
+
+### Shortening revision — current 43-slide structure
+
+- Removed original main slides **3, 4, 5, 11, 13, 18, 22, 27, 28, 40, 46, 47, 48, and 49**: repeated headline summaries, route/divider slides, redundant explanations, and the multi-slide personal verdict.
+- Removed original backup slides **52, 56, and 57**: duplicate descriptor material, generic metric definitions, and a duplicate comparison table.
+- Replaced original slide **50** with one neutral **“Findings and limits”** slide, now **slide 36**.
+- Carried the last-page/batch-fetcher detail into slide **10** notes, broad activity-signal interpretation into slide **15** notes, and the active-congestion point into slide **19** notes.
+- Renumbered the paper-material audit above and the current slide references.
+
+### Completed QA — 43-slide revision before header/footer cleanup
+
+Checked `output/trim_review/DSASSASSIN_v2.pptx` and its PowerPoint-rendered PDF/PNG export on 28 October 2026. The candidate contains **43 slides with speaker notes**, **43 PDF pages**, and **43 rendered slide images**. All six original paper figure images match the source assets byte-for-byte. All six editable code excerpts still match `paper_assets/code_listings.json` exactly, including Listing 1's lines 7–12.
+
+The former “My verdict,” strengths, pushback, and proposed-experiments sections are absent from the presentation. Exactly one **“Findings and limits”** closing slide remains. Slide numbers are sequential, the closing slide and first appendix slide render cleanly, and the rebuilt text and notes match the reviewed shortened presentation. Retained diagrams and code panels preserve their previously checked layouts. These checks verify the presentation artifacts; they do not reproduce the paper's hardware experiments or establish that its snippets are complete runnable programs.

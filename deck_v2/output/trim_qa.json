@@ -1,0 +1,19 @@
+{
+  "slides": 43,
+  "main_slides": 36,
+  "backup_slides": 7,
+  "removed_slides": 17,
+  "closing_slide": 36,
+  "plan_sections": 43,
+  "plan_titles_match_pptx": true,
+  "plan_sections_have_four_fields": true,
+  "new_closing_slide_visually_reviewed": true,
+  "rebuild_matches_trimmed_deck": true,
+  "pptx_sha256": "27645d0272113b75733279148c5ecebfef329794ddb5303b4d67bac34cb1124f",
+  "plan_sha256": "69dc8ec9f1596fed896e0852ed5995e30bb431c8dd92b0dcd9ff5ba6d53bfba4",
+  "presenters": "Siddharth Banakar and Dinesh Samala",
+  "page_number_only_footers": 43,
+  "detective_story_headers": 0,
+  "notes_images_and_code_preserved": true,
+  "presentation_date": "29 October 2026"
+}

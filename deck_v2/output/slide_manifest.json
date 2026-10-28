@@ -17,30 +17,6 @@
   },
   {
     "n": 3,
-    "title": "Four demonstrations, one humble signal",
-    "act": "The wall has a crack",
-    "source": "Paper § VI, Tables III–IV · pp. 9–12 · reported results",
-    "seconds": 70,
-    "backup": false
-  },
-  {
-    "n": 4,
-    "title": "The route — from shared state to application leakage",
-    "act": "The wall has a crack",
-    "source": "Six acts + backup",
-    "seconds": 55,
-    "backup": false
-  },
-  {
-    "n": 5,
-    "title": "Act 2: Meet the machine",
-    "act": "Divider",
-    "source": "",
-    "seconds": 15,
-    "backup": false
-  },
-  {
-    "n": 6,
     "title": "Memory offload creates a new place to observe",
     "act": "Meet the machine",
     "source": "Paper §§ I–II-A · pp. 1–2",
@@ -48,15 +24,15 @@
     "backup": false
   },
   {
-    "n": 7,
+    "n": 4,
     "title": "A DSA operation is a descriptor-driven pipeline",
     "act": "Meet the machine",
-    "source": "Paper § II-A, Fig. 1 · pp. 2–3",
+    "source": "Paper Fig. 1, §II-A/B · p. 3 · original diagram; caption omitted",
     "seconds": 75,
     "backup": false
   },
   {
-    "n": 8,
+    "n": 5,
     "title": "The device keeps its own translation cache",
     "act": "Meet the machine",
     "source": "Paper § II-B, Fig. 1 · pp. 2–3",
@@ -64,7 +40,7 @@
     "backup": false
   },
   {
-    "n": 9,
+    "n": 6,
     "title": "The attacker needs DSA access and co-location",
     "act": "Meet the machine",
     "source": "Paper § V-A · pp. 7–8",
@@ -72,23 +48,15 @@
     "backup": false
   },
   {
-    "n": 10,
+    "n": 7,
     "title": "Two channels cross two different boundaries",
     "act": "Meet the machine",
-    "source": "Paper §§ IV-A, V · pp. 3–8",
+    "source": "Paper Fig. 7, §§V–VI · p. 8 · original attack setup",
     "seconds": 80,
     "backup": false
   },
   {
-    "n": 11,
-    "title": "Reverse engineering answers three questions",
-    "act": "Meet the machine",
-    "source": "Paper §§ III–IV · pp. 3–7",
-    "seconds": 60,
-    "backup": false
-  },
-  {
-    "n": 12,
+    "n": 8,
     "title": "Characterization counters ≠ attack signals",
     "act": "Meet the machine",
     "source": "Paper § IV-B, Table I · pp. 4–6",
@@ -96,63 +64,47 @@
     "backup": false
   },
   {
-    "n": 13,
-    "title": "Act 3: The detective story",
-    "act": "Divider",
-    "source": "",
-    "seconds": 15,
-    "backup": false
-  },
-  {
-    "n": 14,
+    "n": 9,
     "title": "Clue #1 — the opcode chooses which slot you touch",
     "act": "The detective story",
-    "source": "Paper § IV-B, Fig. 3 · pp. 4–5",
+    "source": "Paper Fig. 3, §IV-B · pp. 4–5 · original descriptor diagram",
     "seconds": 70,
     "backup": false
   },
   {
-    "n": 15,
+    "n": 10,
     "title": "The reveal — five drawers, one translation each",
     "act": "The detective story",
-    "source": "Paper §§ IV-A–B, Fig. 2 · pp. 3–6 · empirical model",
+    "source": "Paper Fig. 2, §IV-A/B · p. 4 · original reverse-engineered structure",
     "seconds": 75,
     "backup": false
   },
   {
-    "n": 16,
+    "n": 11,
     "title": "Proof of “one slot” — base → offset → base",
     "act": "The detective story",
-    "source": "Paper § IV-B, Listing 2 · pp. 4–5",
+    "source": "Paper Listing 2, §IV-B · p. 5 · verbatim code; helper setup omitted",
     "seconds": 70,
     "backup": false
   },
   {
-    "n": 17,
+    "n": 12,
     "title": "The drawers are independent — even sharing bits",
     "act": "The detective story",
-    "source": "Paper § IV-B, Listings 3–4 · p. 5",
+    "source": "Paper Listings 3–4, §IV-B · p. 5 · verbatim code; setup omitted",
     "seconds": 75,
     "backup": false
   },
   {
-    "n": 18,
-    "title": "A slot remembers the last page, not the history",
-    "act": "The detective story",
-    "source": "Paper § IV-B · pp. 5–6",
-    "seconds": 60,
-    "backup": false
-  },
-  {
-    "n": 19,
+    "n": 13,
     "title": "The money shot — eviction follows the engine, not the queue",
     "act": "The detective story",
-    "source": "Paper § IV-B, Fig. 5 · p. 6",
+    "source": "Paper Fig. 5, §IV-B · p. 6 · original E0/E1/E2 diagram",
     "seconds": 85,
     "backup": false
   },
   {
-    "n": 20,
+    "n": 14,
     "title": "The clock still works — even under noise",
     "act": "The detective story",
     "source": "Paper § IV-B, Fig. 4 · pp. 5–6 · original distributions",
@@ -160,23 +112,15 @@
     "backup": false
   },
   {
-    "n": 21,
+    "n": 15,
     "title": "Weapon #1 — Prime → Idle → Probe",
     "act": "The detective story",
-    "source": "Paper § V-B · p. 8",
+    "source": "Paper Listing 1, lines 7–12 · p. 4; NOOP attack in §V-B · p. 8",
     "seconds": 75,
     "backup": false
   },
   {
-    "n": 22,
-    "title": "Why it’s powerful — and what it cannot do",
-    "act": "The detective story",
-    "source": "Paper §§ IV-B, V-B · pp. 4–8 · interpretation",
-    "seconds": 60,
-    "backup": false
-  },
-  {
-    "n": 23,
+    "n": 16,
     "title": "The dead end that wasn’t — a flag talks",
     "act": "The detective story",
     "source": "Paper § IV-C, Fig. 6 · pp. 6–7 · original latency plot",
@@ -184,23 +128,23 @@
     "backup": false
   },
   {
-    "n": 24,
+    "n": 17,
     "title": "Learning to hold the queue hostage",
     "act": "The detective story",
-    "source": "Paper §§ IV-A, IV-C · pp. 3–4, 6–7",
+    "source": "Paper Listing 5, §IV-C · p. 6 · verbatim experiment; setup omitted",
     "seconds": 65,
     "backup": false
   },
   {
-    "n": 25,
+    "n": 18,
     "title": "The trap — leave exactly one seat open",
     "act": "The detective story",
-    "source": "Paper §§ IV-C, V-C, Listing 6 · pp. 7–8",
+    "source": "Paper Listing 6, §§IV-C/V-C · pp. 7–8 · verbatim code; setup omitted",
     "seconds": 70,
     "backup": false
   },
   {
-    "n": 26,
+    "n": 19,
     "title": "Weapon #2 — Congest → Idle → Probe",
     "act": "The detective story",
     "source": "Paper § V-C · p. 8",
@@ -208,23 +152,7 @@
     "backup": false
   },
   {
-    "n": 27,
-    "title": "Two weapons, two personalities",
-    "act": "The detective story",
-    "source": "Paper §§ V–VI · pp. 7–12 · footprint row = presenter reading",
-    "seconds": 70,
-    "backup": false
-  },
-  {
-    "n": 28,
-    "title": "Act 4: What it steals",
-    "act": "Divider",
-    "source": "",
-    "seconds": 15,
-    "backup": false
-  },
-  {
-    "n": 29,
+    "n": 20,
     "title": "Can it even carry a message?",
     "act": "What it steals",
     "source": "Paper § VI-A · p. 9 · simplified protocol",
@@ -232,7 +160,7 @@
     "backup": false
   },
   {
-    "n": 30,
+    "n": 21,
     "title": "17.19 kbps — and a bandwidth / error tradeoff",
     "act": "What it steals",
     "source": "Paper § VI-A, Fig. 9, Table IV · pp. 9, 12",
@@ -240,15 +168,15 @@
     "backup": false
   },
   {
-    "n": 31,
+    "n": 22,
     "title": "Attack #1 — websites leak through the stack",
     "act": "What it steals",
-    "source": "Paper § VI-B, Fig. 8 · pp. 8–10 · simplified path",
+    "source": "Paper Fig. 8, §VI-B · pp. 8–10 · original VPP/memif setup",
     "seconds": 70,
     "backup": false
   },
   {
-    "n": 32,
+    "n": 23,
     "title": "The pipeline, laid bare — and it is closed-world",
     "act": "What it steals",
     "source": "Paper § VI-B · pp. 9–10 · dataset arithmetic from stated split",
@@ -256,7 +184,7 @@
     "backup": false
   },
   {
-    "n": 33,
+    "n": 24,
     "title": "The traces really are different",
     "act": "What it steals",
     "source": "Paper § VI-B, Fig. 10 · p. 9 · original example traces",
@@ -264,7 +192,7 @@
     "backup": false
   },
   {
-    "n": 34,
+    "n": 25,
     "title": "85.73% — the number you must not misquote",
     "act": "What it steals",
     "source": "Paper § VI-B, Fig. 11 · pp. 9–10 · original 15-site matrix",
@@ -272,7 +200,7 @@
     "backup": false
   },
   {
-    "n": 35,
+    "n": 26,
     "title": "Attack #2 — keystrokes, via transparent offload",
     "act": "What it steals",
     "source": "Paper § VI-C · p. 10 · no end-to-end text recovery",
@@ -280,7 +208,7 @@
     "backup": false
   },
   {
-    "n": 36,
+    "n": 27,
     "title": "You can see the typing",
     "act": "What it steals",
     "source": "Paper § VI-C, Fig. 12 · p. 10 · original filtered traces",
@@ -288,7 +216,7 @@
     "backup": false
   },
   {
-    "n": 37,
+    "n": 28,
     "title": "SWQ wins timing — and a caveat I owe you",
     "act": "What it steals",
     "source": "Paper § VI-C, Tables III–IV · pp. 10–12 · headline metrics as reported",
@@ -296,7 +224,7 @@
     "backup": false
   },
   {
-    "n": 38,
+    "n": 29,
     "title": "Attack #3 — fingerprinting the LLM next door",
     "act": "What it steals",
     "source": "Paper § VI-D, Table II · pp. 10–11",
@@ -304,7 +232,7 @@
     "backup": false
   },
   {
-    "n": 39,
+    "n": 30,
     "title": "98.6% — impressive, and bounded",
     "act": "What it steals",
     "source": "Paper § VI-D, Fig. 13 · p. 11 · original model traces",
@@ -312,15 +240,7 @@
     "backup": false
   },
   {
-    "n": 40,
-    "title": "Act 5: Does it hold up?",
-    "act": "Divider",
-    "source": "",
-    "seconds": 15,
-    "backup": false
-  },
-  {
-    "n": 41,
+    "n": 31,
     "title": "It barely flinches under stress",
     "act": "Does it hold up?",
     "source": "Paper § VI-E, Table III · p. 11 · all six reported rows",
@@ -328,7 +248,7 @@
     "backup": false
   },
   {
-    "n": 42,
+    "n": 32,
     "title": "Better on two axes — honestly, not all",
     "act": "Does it hold up?",
     "source": "Paper § VI-F, Table IV · pp. 11–12 · cross-paper values, not matched re-runs",
@@ -336,7 +256,7 @@
     "backup": false
   },
   {
-    "n": 43,
+    "n": 33,
     "title": "The clean hardware fix costs the thing DSA is for",
     "act": "Does it hold up?",
     "source": "Paper § VII · pp. 11–12 · proposals, not shipped fixes",
@@ -344,7 +264,7 @@
     "backup": false
   },
   {
-    "n": 44,
+    "n": 34,
     "title": "What an operator can do right now",
     "act": "Does it hold up?",
     "source": "Paper § VII · p. 12 · deployment guidance",
@@ -352,7 +272,7 @@
     "backup": false
   },
   {
-    "n": 45,
+    "n": 35,
     "title": "They measured the cost — not the leftover leak",
     "act": "Does it hold up?",
     "source": "Paper § VII, Fig. 14 · p. 12 · original throughput chart",
@@ -360,47 +280,15 @@
     "backup": false
   },
   {
-    "n": 46,
-    "title": "Act 6: My verdict",
-    "act": "Divider",
-    "source": "",
-    "seconds": 15,
-    "backup": false
-  },
-  {
-    "n": 47,
-    "title": "What’s genuinely excellent",
-    "act": "My verdict",
-    "source": "Presenter assessment · paper §§ IV–VI",
-    "seconds": 65,
-    "backup": false
-  },
-  {
-    "n": 48,
-    "title": "What I’d push back on",
-    "act": "My verdict",
-    "source": "Presenter assessment · paper §§ V–VII, esp. § VI-C",
+    "n": 36,
+    "title": "Findings and limits",
+    "act": "Conclusion",
+    "source": "Paper §§ IV–VII · evidence and evaluation scope",
     "seconds": 70,
     "backup": false
   },
   {
-    "n": 49,
-    "title": "The experiments I’d want to see",
-    "act": "My verdict",
-    "source": "Presenter-proposed · not reported in the paper",
-    "seconds": 65,
-    "backup": false
-  },
-  {
-    "n": 50,
-    "title": "Shared accelerator state belongs in the isolation model",
-    "act": "My verdict",
-    "source": "Based on Chen et al., HPCA 2026 · main talk ends here",
-    "seconds": 70,
-    "backup": false
-  },
-  {
-    "n": 51,
+    "n": 37,
     "title": "Glossary",
     "act": "Glossary",
     "source": "Paper §§ II–V · pp. 2–8",
@@ -408,15 +296,7 @@
     "backup": true
   },
   {
-    "n": 52,
-    "title": "Descriptor layout — field meaning depends on opcode",
-    "act": "Descriptor detail",
-    "source": "Paper Fig. 3 · p. 4",
-    "seconds": 45,
-    "backup": true
-  },
-  {
-    "n": 53,
+    "n": 38,
     "title": "Observation windows have different constraints",
     "act": "Timing & calibration",
     "source": "Paper §§ IV-B–C, V-B–C · pp. 5–8",
@@ -424,7 +304,7 @@
     "backup": true
   },
   {
-    "n": 54,
+    "n": 39,
     "title": "Keystroke count arithmetic needs clarification",
     "act": "Reporting audit",
     "source": "Paper § VI-C · p. 10 · diagnostic only",
@@ -432,7 +312,7 @@
     "backup": true
   },
   {
-    "n": 55,
+    "n": 40,
     "title": "Sampling and dataset sizes",
     "act": "Evaluation detail",
     "source": "Paper §§ VI-B, VI-D · pp. 9–11",
@@ -440,23 +320,7 @@
     "backup": true
   },
   {
-    "n": 56,
-    "title": "Different metrics answer different questions",
-    "act": "Metric interpretation",
-    "source": "Paper §§ VI-A–F · pp. 9–12",
-    "seconds": 45,
-    "backup": true
-  },
-  {
-    "n": 57,
-    "title": "The original cross-paper comparison table",
-    "act": "Prior-work detail",
-    "source": "Paper Table IV · p. 12 · blank cells = not reported",
-    "seconds": 45,
-    "backup": true
-  },
-  {
-    "n": 58,
+    "n": 41,
     "title": "Reproduction requires a configured DSA platform",
     "act": "Artifact & reproducibility",
     "source": "Paper Appendix, p. 15 · authors’ artifact",
@@ -464,7 +328,7 @@
     "backup": true
   },
   {
-    "n": 59,
+    "n": 42,
     "title": "Likely questions and concise answers",
     "act": "Q&A preparation",
     "source": "Answers from paper §§ IV–VII + presenter assessment",
@@ -472,7 +336,7 @@
     "backup": true
   },
   {
-    "n": 60,
+    "n": 43,
     "title": "Sources and provenance",
     "act": "References",
     "source": "Primary source: user-supplied hpca26dsassassin.pdf",

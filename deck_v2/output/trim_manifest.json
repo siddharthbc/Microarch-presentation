@@ -1,0 +1,269 @@
+{
+  "source_slides": 60,
+  "slides": 43,
+  "main": 36,
+  "backup": 7,
+  "main_duration_seconds": 2480,
+  "closing_slide": 36,
+  "mapping": [
+    {
+      "original": 1,
+      "current": 1
+    },
+    {
+      "original": 2,
+      "current": 2
+    },
+    {
+      "original": 6,
+      "current": 3
+    },
+    {
+      "original": 7,
+      "current": 4
+    },
+    {
+      "original": 8,
+      "current": 5
+    },
+    {
+      "original": 9,
+      "current": 6
+    },
+    {
+      "original": 10,
+      "current": 7
+    },
+    {
+      "original": 12,
+      "current": 8
+    },
+    {
+      "original": 14,
+      "current": 9
+    },
+    {
+      "original": 15,
+      "current": 10
+    },
+    {
+      "original": 16,
+      "current": 11
+    },
+    {
+      "original": 17,
+      "current": 12
+    },
+    {
+      "original": 19,
+      "current": 13
+    },
+    {
+      "original": 20,
+      "current": 14
+    },
+    {
+      "original": 21,
+      "current": 15
+    },
+    {
+      "original": 23,
+      "current": 16
+    },
+    {
+      "original": 24,
+      "current": 17
+    },
+    {
+      "original": 25,
+      "current": 18
+    },
+    {
+      "original": 26,
+      "current": 19
+    },
+    {
+      "original": 29,
+      "current": 20
+    },
+    {
+      "original": 30,
+      "current": 21
+    },
+    {
+      "original": 31,
+      "current": 22
+    },
+    {
+      "original": 32,
+      "current": 23
+    },
+    {
+      "original": 33,
+      "current": 24
+    },
+    {
+      "original": 34,
+      "current": 25
+    },
+    {
+      "original": 35,
+      "current": 26
+    },
+    {
+      "original": 36,
+      "current": 27
+    },
+    {
+      "original": 37,
+      "current": 28
+    },
+    {
+      "original": 38,
+      "current": 29
+    },
+    {
+      "original": 39,
+      "current": 30
+    },
+    {
+      "original": 41,
+      "current": 31
+    },
+    {
+      "original": 42,
+      "current": 32
+    },
+    {
+      "original": 43,
+      "current": 33
+    },
+    {
+      "original": 44,
+      "current": 34
+    },
+    {
+      "original": 45,
+      "current": 35
+    },
+    {
+      "original": 50,
+      "current": 36
+    },
+    {
+      "original": 51,
+      "current": 37
+    },
+    {
+      "original": 53,
+      "current": 38
+    },
+    {
+      "original": 54,
+      "current": 39
+    },
+    {
+      "original": 55,
+      "current": 40
+    },
+    {
+      "original": 58,
+      "current": 41
+    },
+    {
+      "original": 59,
+      "current": 42
+    },
+    {
+      "original": 60,
+      "current": 43
+    }
+  ],
+  "removed": [
+    {
+      "original": 3,
+      "title": "Four demonstrations, one humble signal",
+      "reason": "Headline numbers repeated in the application results"
+    },
+    {
+      "original": 4,
+      "title": "The route — from shared state to application leakage",
+      "reason": "Standalone roadmap"
+    },
+    {
+      "original": 5,
+      "title": "Act 2: Meet the machine",
+      "reason": "Section divider"
+    },
+    {
+      "original": 11,
+      "title": "Reverse engineering answers three questions",
+      "reason": "Reverse-engineering preview repeated by the experiments"
+    },
+    {
+      "original": 13,
+      "title": "Act 3: The detective story",
+      "reason": "Section divider"
+    },
+    {
+      "original": 18,
+      "title": "A slot remembers the last page, not the history",
+      "reason": "Recency detail merged into the DevTLB structure notes"
+    },
+    {
+      "original": 22,
+      "title": "Why it’s powerful — and what it cannot do",
+      "reason": "Activity-versus-data explanation merged into Prime–Idle–Probe notes"
+    },
+    {
+      "original": 27,
+      "title": "Two weapons, two personalities",
+      "reason": "Channel comparison repeated by the mechanisms; active footprint retained in notes"
+    },
+    {
+      "original": 28,
+      "title": "Act 4: What it steals",
+      "reason": "Section divider"
+    },
+    {
+      "original": 40,
+      "title": "Act 5: Does it hold up?",
+      "reason": "Section divider"
+    },
+    {
+      "original": 46,
+      "title": "Act 6: My verdict",
+      "reason": "Verdict section divider"
+    },
+    {
+      "original": 47,
+      "title": "What’s genuinely excellent",
+      "reason": "Separate strengths slide condensed into the closing slide"
+    },
+    {
+      "original": 48,
+      "title": "What I’d push back on",
+      "reason": "Separate critique slide condensed into the closing slide"
+    },
+    {
+      "original": 49,
+      "title": "The experiments I’d want to see",
+      "reason": "Separate proposed future-work slide removed"
+    },
+    {
+      "original": 52,
+      "title": "Descriptor layout — field meaning depends on opcode",
+      "reason": "Descriptor diagram already shown in the main talk"
+    },
+    {
+      "original": 56,
+      "title": "Different metrics answer different questions",
+      "reason": "Generic metric definitions removed from the appendix"
+    },
+    {
+      "original": 57,
+      "title": "The original cross-paper comparison table",
+      "reason": "Cross-paper comparison already shown in the main talk"
+    }
+  ]
+}
